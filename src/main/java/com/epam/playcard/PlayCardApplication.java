@@ -11,7 +11,5 @@ public class PlayCardApplication {
 
 
         SpringApplication.run(PlayCardApplication.class, args);
-
-
     }
 }
