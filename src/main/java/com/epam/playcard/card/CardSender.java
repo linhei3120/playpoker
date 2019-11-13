@@ -87,10 +87,11 @@ public class CardSender extends Thread {
 
         List<Thread> threadList = new ArrayList<Thread>();
         try {
-            ///start player sub Thread
+            ///start player sub Threadlast
             for(int i=0;i<playerList.size();i++){
                 Thread subTread = new Thread(playerList.get(i));
                 threadList.add( subTread);
+
                 subTread.start();
             }
 

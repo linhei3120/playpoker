@@ -23,7 +23,7 @@ public class CardPlayer implements Runnable {
 
     public void  receiveCard(Card card){
         if(null==selfCardList){
-            selfCardList = new LinkedList<>();
+            selfCardList = new LinkedList<Card>();
         }
         selfCardList.add(card);
         getNewCard= true;
@@ -57,6 +57,7 @@ public class CardPlayer implements Runnable {
                     }
                 }
                 if(!Thread.currentThread().isInterrupted()){
+                    //Thread.currentThread().sleep( 300);
                     Thread.currentThread().sleep( 800 + playerIndex*5);
                 }
             }
